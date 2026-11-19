@@ -9,6 +9,12 @@
   <url>
     <loc>https://billionairewatch.in/spend-elon-money.html</loc>
     <lastmod>2026-11-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://billionairewatch.in/tools/wealth-blueprint.html</loc>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>

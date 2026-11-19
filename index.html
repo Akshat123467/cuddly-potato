@@ -6,7 +6,8 @@
     <title>Financial Insights & Billionaire Analysis (2026) | Billionaire Watch</title>
     <meta name="description" content="Explore in-depth investigative reports, wealth management case studies, private equity allocations, and mathematical analyses of the world's richest individuals.">
     <link rel="canonical" href="https://billionairewatch.in/articles.html">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
     <style>
         :root, [data-theme="dark"] {
@@ -1072,8 +1073,7 @@
 
     <script>
         const themeToggle = document.getElementById('theme-toggle');
-        localStorage.setItem('theme', 'dark');
-            const savedTheme = 'dark';
+        const savedTheme = localStorage.getItem('theme') || 'dark';
         document.documentElement.setAttribute('data-theme', savedTheme);
         themeToggle.innerHTML = savedTheme === 'light' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
 

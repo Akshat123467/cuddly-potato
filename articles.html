@@ -6,7 +6,8 @@
     <title>Financial Insights & Billionaire Analysis (2026) | Billionaire Watch</title>
     <meta name="description" content="Explore in-depth investigative reports, wealth management case studies, private equity allocations, and mathematical analyses of the world's richest individuals.">
     <link rel="canonical" href="https://billionairewatch.in/articles.html">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
     <style>
         :root, [data-theme="dark"] {
@@ -978,6 +979,7 @@
                     <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="articles.html" class="nav-link active"><i class="fas fa-newspaper"></i> Articles</a></li>
                     <li><a href="spend-elon-money.html" class="nav-link" style="color: #4ade80;"><i class="fas fa-gamepad"></i> Spend $1T Game</a></li>
+                    <li><a href="tools/wealth-blueprint.html" class="nav-link" style="color: #facc15;"><i class="fas fa-calculator"></i> Wealth Blueprint</a></li>
                     <li><a href="profiles/elon-musk.html" class="nav-link"><i class="fas fa-user-tie"></i> Elon Musk</a></li>
                     <li><a href="profiles/mukesh-ambani.html" class="nav-link" style="color: #ff9933;"><i class="fas fa-building"></i> Ambani Profile</a></li>
                     <li><a href="analysis.html" class="nav-link"><i class="fas fa-chart-pie"></i> Macro Trends</a></li>
@@ -1091,6 +1093,7 @@
             <a href="index.html">Home</a>
             <a href="articles.html">All Articles</a>
             <a href="spend-elon-money.html">Spend $1T Game</a>
+            <a href="tools/wealth-blueprint.html">Wealth Blueprint</a>
             <a href="analysis.html">Macro Trends</a>
             <a href="about.html">About Us</a>
             <a href="contact.html">Contact Us</a>
@@ -1102,8 +1105,7 @@
 
     <script>
         const themeToggle = document.getElementById('theme-toggle');
-        localStorage.setItem('theme', 'dark');
-            const savedTheme = 'dark';
+        const savedTheme = localStorage.getItem('theme') || 'dark';
         document.documentElement.setAttribute('data-theme', savedTheme);
         themeToggle.innerHTML = savedTheme === 'light' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
 
