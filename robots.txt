@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /scripts/
-Disallow: /netlify/
-
-Sitemap: https://billionairewatch.in/sitemap.xml
